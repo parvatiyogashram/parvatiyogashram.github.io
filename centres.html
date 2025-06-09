@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="पार्वती योगाश्रम - एक आध्यात्मिक केन्द्र जो योग, ध्यान और सत्संग द्वारा आत्मोन्नति का मार्ग प्रदान करता है।">
+    <title>पार्वती योगाश्रम</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            margin: 0;
+            background-color: #f5f5f5a2;
+        }
+
+        header {
+            background-color: white;
+            text-align: center;
+            padding: 10px 0 20px 0;
+            position: relative;
+        }
+
+        .logo {
+            width: 120px;
+            position: absolute;
+            top: 3px;
+            left: 40px;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        .language-selector select {
+            width: 160px;
+            padding: 6px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .social-links {
+            position: absolute;
+            top: 70px;
+            right: 200px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-links a img.social-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .social-links a img.social-icon:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        #title {
+            color: red;
+            font-size: 48px;
+            font-weight: bold;
+            margin: 80px 0 5px 0;
+            margin-top: 0;
+        }
+
+        #location {
+            color: red;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgba(181, 201, 224, 0.616);
+            padding: 5px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav a {
+            color: rgb(188, 11, 26);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav li ul {
+            display: none;
+            position: absolute;
+            background-color: #ffc107;
+            padding: 10px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+            min-width: 180px;
+        }
+
+        nav li:hover > ul {
+            display: block;
+        }
+
+        nav li ul li {
+            display: block;
+            background-color: #ffecb3;
+            margin: 5px 0;
+            padding: 5px 10px;
+            border-radius: 3px;
+            white-space: nowrap;
+        }
+
+        nav li ul li a {
+            color: #bf360c;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #description-image {
+            width: 100%;
+            height: 40%;
+            
+        }
+
+        
+        footer {
+            background-color: #d84315;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 100px;
+                top: 5px;
+                left: 10px;
+            }
+            .language-selector select {
+                width: 140px;
+                font-size: 0.em;
+            }
+            #title {
+                font-size: 32px;
+            }
+            #location {
+                font-size: 16px;
+            }
+            .social-links {
+                top: 55px;
+                right: 10px;
+            }
+        }
+        
+    .divider {
+        width: 100%; /* Line ki width pure page ke chaurai me */
+        height: 2px; /* Line ki height */
+        background-color: #bf360c; /* Line ka color */
+        margin: 20px auto; /* Center align aur vertical spacing */
+
+    }
+    #ashram-heading, #objective-heading {
+        font-size: 28px; /* Heading ka font size */
+        font-weight: bold; /* Heading ko bold banane ke liye */
+        text-align: center; /* Heading ko center align karne ke liye */
+        color: #bf360c; /* Heading ka color */
+        margin-top: 30px; /* Upar se spacing */
+        margin-bottom: 10px; /* Niche se spacing */
+    }
+
+    #ashram-description, #objective-description {
+        font-size: 18px; /* Description ka font size */
+        text-align: justify; /* Content ko left align karne ke liye */
+        color: #333; /* Text ka color */
+        margin: 0 auto 20px auto; /* Vertical aur horizontal spacing */
+        max-width: 800px; /* Description ki width limit karne ke liye */
+        line-height: 1.6; /* Line spacing */
+    }
+
+    #objective-description {
+        list-style-type: decimal; /* Ordered list ke liye numbering */
+        padding-left: 20px; /* Left padding for list alignment */
+    }
+    
+
+    .banner h2 {
+        font-size: 28px; /* Font size for the heading */
+        font-weight: bold; /* Bold text */
+        text-align: left; /* Center align the heading */
+        
+    }
+    </style>
+
+    <meta name="description" content="Parvati Yogashram, Chhapra Bihar – A spiritual center guided by Sadguru Shri Shaktibalak Paramhans for yoga, meditation, and inner peace.">
+    <meta name="keywords" content="Parvati Yogashram, Yoga, Meditation, Sadguru, Shaktibalak, Chhapra, Bihar">
+    <meta name="author" content="Parvati Yogashram">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parvati Yogashram – Sadguru Shri Shaktibalak Paramhans</title>
+    
+
+<body>
+    <header>
+        <div class="language-selector">
+            <select onchange="changeLanguage(this.value)">
+                <option value="hi">हिन्दी</option>
+                <option value="en">English</option>
+                <option value="mr">मराठी</option>
+                <option value="gu">ગુજરાતી</option>
+            </select>
+        </div>
+        <img src="Logo.png" alt="पार्वती योगाश्रम का लोगो" class="logo">
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61563565344165" target="_blank">
+                <img src="facebook-logo.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://photos.app.goo.gl/UxYdVRzvYBetiXEM6" target="_blank">
+                <img src="google-photos-logo.png" alt="Google Photos" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/@ParvatiYogashram8" target="_blank">
+                <img src="youtube-logo.png" alt="YouTube" class="social-icon">
+            </a>
+        </div>
+
+        <h1 id="title">पार्वती योगाश्रम</h1>
+        <p id="location">शक्तिपुरी, छपरा, बिहार</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" id="menu-home">मुख्य पृष्ट</a></li>
+            <li>
+                <a href="javascript:void(0);" id="menu-events">कार्यक्रम</a>
+                <ul>
+                    <li><a href="annual-festival.html" id="menu-varshik">वार्षिक उत्सव</a></li>
+                    <li><a href="guru-purnima.html" id="menu-gurupurnima">गुरु पूर्णिमा महोत्सव</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" id="menu-about">हमारे बारे में</a>
+                <ul>
+                    <li><a href="ashram.html" id="menu-ashram">आश्रम के बारे में</a></li>
+                    <li><a href="centres.html" id="menu-centre">हमारे केन्द्र</a></li>
+                    <li><a href="contact.html" id="menu-contact">संपर्क करें</a></li>
+                </ul>
+            </li>
+            <!-- Added "साहित्य" Menu -->
+        <li><a href="sahitya.html" id="menu-sahitya">साहित्य</a></li>
+        <!-- Added "दान" Menu -->
+        <li><a href="daan.html" id="menu-daan">दान</a></li>
+    </ul>
+    </ul>
+    </nav>
+
+    <!-- Straight line below bareme.png -->
+        <div class="divider"></div>
+
+        
+    <h2 id="objective-heading" style="color: rgb(89, 15, 227);">पार्वती योगाश्रम की शाखाएं </h2>
+</div>
+
+    <!-- Description for "आश्रम के उद्देश्य" -->
+    <p style="font-weight: bold; color: #0e0e0e; margin-bottom: 10px; text-align: center;">
+        परम पूज्य सद्गुरु नाथ  श्री श्री शक्तिबालक परमहंस जी की पावन प्रेरणा से संचालित पार्वती योगाश्रम की विभिन्न शाखाएं पूरे देश में आत्मोन्नति का संदेश प्रसारित कर रही हैं। नीचे शाखाओं की सूची दी गई है:
+    </p>
+
+    <!-- शाखाओं की सूची को <ol> में रखें -->
+    <ol id="objective-description" style="font-size: 18px; color: #333; max-width: 800px; margin: 0 auto 20px auto; line-height: 1.6; text-align: justify;">
+        <li style="font-weight: bold; color: #d84315;">शक्तिपूरी</li>
+            <br>
+            यह पार्वती योगाश्रम का मुख्यालय है, इसकी स्थापना भगवान श्री श्री  शक्तिबालक परमहंस के श्री कर कमलों द्वारा सन् 19.... मे हुआ था | इसका पता - पार्वती योगाश्रम, "शक्तिपूरी", ग्राम - शिवनगरी, पोस्ट - गुरुकुल मेहींया, जिला - सारण (छपरा), बिहार - 841301
+        <li style="font-weight: bold; color: #d84315;">चैतन्य धाम</li>
+        <br>
+        यह गुजरात के अम्बा जी में स्थित है। इसकी स्थापना .... 
+        <li style="font-weight: bold; color: #d84315;">शक्तिबालक पुरम</li>
+        <br>
+        यह बिहार राज्य के सिवान जिले घूरघाट नामक गाँव मे स्थित है जो श्री गुरु देव भगवान का जन्म स्थान भी है | इसकी स्थापना ....
+        <li style="font-weight: bold; color: #d84315;">कलाधाम</li>
+        <br>
+        यह आश्रम महाराष्ट्र के सातारा जिले मे स्थित है। इसकी स्थापना ....
+        <li style="font-weight: bold; color: #d84315;">आनंद धाम</li>
+        <br>
+        यह आश्रम गुजरात के नवसारी में स्थित है। इसकी स्थापना ....  इसका पता - पार्वती योगाश्रम, D - 31, वृंदावन सोसाइटी, गणदेवी रोड, नवसारी, गुजरात - 396445
+        <li style="font-weight: bold; color: #d84315;">दिव्य धाम</li>
+        <br>
+        यह आश्रम महाराष्ट्र के ..........................................
+        
+    </ol>
+
+    
+
+        <!-- Blank space below -->
+        <div style="height: 20px;"></div>
+    </div>
+
+    <footer>
+        &copy; पार्वती योगाश्रम, छपरा, बिहार | सर्वाधिकार सुरक्षित<br>
+        ईमेल: parvatiyogashram8@gmail.com | मोबाइल: +91-8565081056
+    </footer>
+
+    <script>
+        const translations = {
+            hi: {
+                title: 'पार्वती योगाश्रम',
+                location: 'शक्तिपुरी, छपरा, बिहार',
+                menuHome: 'मुख्य पृष्ट',
+                menuEvents: 'कार्यक्रम',
+                menuVarshik: 'वार्षिक उत्सव',
+                menuGuru: 'गुरु पूर्णिमा महोत्सव',
+                menuAbout: 'हमारे बारे में',
+                menuAshram: 'आश्रम के बारे में',
+                menuCentre: 'हमारे केन्द्र',
+                menuContact: 'संपर्क करें',
+                menuSahitya: 'साहित्य',
+                menuDaan: 'दान'
+            },
+            en: {
+                title: 'Parvati Yogashram',
+                location: 'Shaktipuri, Chapra, Bihar',
+                menuHome: 'Home',
+                menuEvents: 'Events',
+                menuVarshik: 'Annual Festival',
+                menuGuru: 'Guru Purnima Celebration',
+                menuAbout: 'About Us',
+                menuAshram: 'About the Ashram',
+                menuCentre: 'Our Centres',
+                menuContact: 'Contact Us',
+                menuSahitya: 'Literature',
+                menuDaan: 'Donation'
+            },
+            mr: {
+                title: 'पार्वती योगाश्रम',
+                location: 'शक्तिपुरी, छपरा, बिहार',
+                menuHome: 'मुखपृष्ठ',
+                menuEvents: 'कार्यक्रम',
+                menuVarshik: 'वार्षिक महोत्सव',
+                menuGuru: 'गुरु पूर्णिमा महोत्सव',
+                menuAbout: 'आमच्याबद्दल',
+                menuAshram: 'आश्रमाबद्दल',
+                menuCentre: 'आमचे केंद्र',
+                menuContact: 'संपर्क करा',
+                menuSahitya: 'साहित्य',
+                menuDaan: 'दान'
+            },
+            gu: {
+                title: 'પાર્વતી યોગાશ્રમ',
+                location: 'શક્તિપુરી, છપરા, બિહાર',
+                menuHome: 'મુખ્ય પૃષ્ઠ',
+                menuEvents: 'કાર્યક્રમ',
+                menuVarshik: 'વાર્ષિક ઉત્સવ',
+                menuGuru: 'ગુરુ પૂણિમા મહોત્સવ',
+                menuAbout: 'અમારા વિશે',
+                menuAshram: 'આશ્રમ વિશે',
+                menuCentre: 'અમારા કેન્દ્ર',
+                menuContact: 'સંપર્ક કરો',
+                menuSahitya: 'સાહિત્ય',
+                menuDaan: 'દાન'
+            }
+        };
+
+        function changeLanguage(lang) {
+            const t = translations[lang];
+            if (!t) return;
+
+            document.getElementById('title').innerText = t.title;
+            document.getElementById('location').innerText = t.location;
+            document.getElementById('menu-home').innerText = t.menuHome;
+            document.getElementById('menu-events').innerText = t.menuEvents;
+            document.getElementById('menu-varshik').innerText = t.menuVarshik;
+            document.getElementById('menu-gurupurnima').innerText = t.menuGuru;
+            document.getElementById('menu-about').innerText = t.menuAbout;
+            document.getElementById('menu-ashram').innerText = t.menuAshram;
+            document.getElementById('menu-centre').innerText = t.menuCentre;
+            document.getElementById('menu-contact').innerText = t.menuContact;
+            document.getElementById('menu-sahitya').innerText = t.menuSahitya;
+            document.getElementById('menu-daan').innerText = t.menuDaan; // Update "दान" translation
+        }
+    </script>
+
+<div style="margin-top:15px; display: flex; justify-content: center;"></div>
+    <iframe src="https://www.google.com/maps?q=Parvati+Yogashram,+Chhapra,+Bihar&output=embed"
+            width=100% height="150" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+</div>
+</body>
+
+
+</html>
